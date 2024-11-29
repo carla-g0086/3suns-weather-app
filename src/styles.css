@@ -4,7 +4,7 @@
     rgba(30, 87, 153, 1) 0%,
     rgba(125, 185, 232, 0) 100%
   );
-  padding: 35px;
+  padding: 30px;
   max-width: 590px;
   display: block;
   margin: auto;
@@ -38,14 +38,10 @@ body {
   margin: left 45px;
 }
 #temp {
-  font-size: 65px;
+  font-size: 55px;
   text-align: left;
 }
-.celcius {
-  font-size: 20px;
-  position: relative;
-  top: -33px;
-}
+
 .WeatherEmoticon {
   width: 90px;
   height:90px;
@@ -114,9 +110,6 @@ position: right;
   cursor:pointer;
   
 }
-.thermometer{
-  text-align: center;
-}
 
 
 .changeUnit{
@@ -145,6 +138,7 @@ h3 {
 
 .weather-forecast-day{
 margin-bottom: 39px;
+text-align: center;
 }
 
 .weather-forecast-date{
@@ -153,8 +147,8 @@ margin-bottom: 39px;
 }
 
 .weather-forecast-icon{
-  width: 85px;
-  height: 85px;
+  width: 82px;
+  height: 82px;
   display: block;
   margin: 0 auto;
 }
@@ -170,6 +164,13 @@ margin-top: 10px;
 
 .temp-estimate-high{
   padding: 0 10px;
+  font-size: small;
+  font-style: italic;
+}
+
+.temp-estimate-low{
+  font-size: small;
+  font-style: italic;
 }
 
 .weather-forecast{

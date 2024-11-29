@@ -9,12 +9,11 @@ let feelsLikeElement = document.querySelector("#feelsLike");
 let timeElement=document.querySelector("#dateTime")
 let date=new Date(response.data.time*1000)
 let weatherIcon = document.querySelector(".weatherIcon");
+
+
 weatherIcon.innerHTML = `<img src="${response.data.condition.icon_url}"class="WeatherEmoticon" >`;
-
-
-
 cityElement.innerHTML = response.data.city;
-temperatureElement.innerHTML = Math.round(temperature);
+temperatureElement.innerHTML = `${(Math.round(temperature))}&degC`;
 humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
 windElement.innerHTML = `${response.data.wind.speed}km/h`;
 descriptionElement.innerHTML = response.data.condition.description;
@@ -84,6 +83,28 @@ function search(event) {
 
 }
 
+function convert() {
+    let tempElement = document.getElementById("temp");
+    let celsius = parseFloat(tempElement.innerHTML);
+
+    if (isNaN(celsius)) {
+        console.error("Invalid temperature value");
+        return;
+    }
+
+    let fahrenheit = (celsius * 9) / 5 + 32;
+    tempElement.innerHTML = `${Math.round(fahrenheit.toFixed(2))}°F`;
+
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    let button = document.getElementById("F-button");
+    button.addEventListener("click", convert);
+});
+
+
+
+
 function formatDay(timestamp){
   let date=new Date(timestamp*1000)
   let days=["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
@@ -116,10 +137,10 @@ response.data.daily.forEach(function (day,index){
         <div class="weather-forecast-temperatures"> 
         <div class="temp-estimate-high"><strong>${Math.round(
           day.temperature.maximum
-        )}&deg</strong></div>  
+        )}&degC</strong></div>  
         <div class="temp-estimate-low">${Math.round(
           day.temperature.minimum
-        )}&deg</div></div>
+        )}&degC</div></div>
         </div>
 `;
   }
