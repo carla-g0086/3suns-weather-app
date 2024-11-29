@@ -106,34 +106,18 @@ margin: auto;
 position: right;
 }
 
-#C-button{
-border:none;
-border-radius: 60px;
-background:transparent 10px;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 20px;
-text-shadow: darksalmon 50px;
-display: block;
-margin: auto;
-position: right;
-}
-
 
 #F-button:hover {
   background:none;
   color:firebrick;
   border: none;
-  cursor:help;
+  cursor:pointer;
   
+}
+.thermometer{
+  text-align: center;
 }
 
-#C-button:hover {
-  background:none;
-  color:firebrick;
-  border: none;
-  cursor:help;
-  
-}
 
 .changeUnit{
   display: flex;
@@ -159,9 +143,35 @@ h3 {
   color: darkblue;
 }
 
+.weather-forecast-day{
+margin-bottom: 39px;
+}
 
-  
- 
+.weather-forecast-date{
+  text-align: center;
+  color: #333333;
+}
 
- 
+.weather-forecast-icon{
+  text-align: center;
+  font-size: 38px;
+}
+
+.weather-forecast-temperatures{
+text-align: center;
+color:#cd1e35;
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+
+
+.temp-estimate-high{
+  padding: 0 10px;
+}
+
+.weather-forecast{
+  display: flex;
+  justify-content: space-around;
+}
   

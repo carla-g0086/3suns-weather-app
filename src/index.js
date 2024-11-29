@@ -81,10 +81,36 @@ function search(event) {
 
 }
 
+function displayForecast(){
+
+let forecastElement = document.querySelector("#forecast");
+
+let days= ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+let forecastHTML="";
+
+days.forEach(function (day){
+forecastHTML = 
+forecastHTML + 
+`
+<div class="weather-forecast-day">
+        <div class="weather-forecast-date">${day}</div>
+        <div class="weather-forecast-icon">🌤️</div>
+        <div class="weather-forecast-temperatures"> 
+        <div class="temp-estimate-high"><strong>12&deg</strong></div>  
+        <div class="temp-estimate-low">14&deg</div></div>
+        </div>
+`;
+});
+forecastElement.innerHTML = forecastHTML;
+}
+
+
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
 search();
+displayForecast();
 
 
