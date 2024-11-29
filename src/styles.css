@@ -8,6 +8,8 @@
   max-width: 590px;
   display: block;
   margin: auto;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.8);
+  border-radius: 16px;
 }
 body {
   background-color: antiquewhite;
