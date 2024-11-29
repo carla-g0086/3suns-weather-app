@@ -1,0 +1,120 @@
+.WeatherApp {
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 87, 153, 1) 0%,
+    rgba(125, 185, 232, 0) 100%
+  );
+  padding: 35px;
+  max-width: 590px;
+  display: block;
+  margin: auto;
+}
+body {
+  background-color: antiquewhite;
+}
+.currentWeather {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+#city {
+  font-family: "Roboto", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+  font-size: xx-large;
+  background: linear-gradient(
+    to right,
+    rgba(253, 217, 139, 1) 0%,
+    rgba(254, 226, 178, 1) 62%,
+    rgba(254, 227, 182, 0.7) 68%,
+    rgba(254, 232, 202, 0) 100%
+  );
+  padding: 0px;
+  text-transform: uppercase;
+}
+.currentTemp {
+  text-align: right;
+  position: fixed;
+  margin: left 45px;
+}
+#temp {
+  font-size: 65px;
+  text-align: left;
+}
+.celcius {
+  font-size: 20px;
+  position: relative;
+  top: -33px;
+}
+.WeatherEmoticon {
+  width: 90px;
+  height:90px;
+  position: relative;
+}
+form {
+  size: 20px;
+}
+#humidity {
+  color:firebrick;
+}
+#wind {
+  color:firebrick;
+  
+}
+#feelsLike {
+  color:firebrick;
+  position: relative;
+}
+.feelsLike {
+  position: relative;
+  top: -20px;
+}
+footer {
+  text-align: center;
+  font-size: smaller;
+}
+#search-button {
+  border: 1px solid color(#a44101 #ff0100 #6fa705 #cd1e35);
+  background-color: orange;
+  color: #140404;
+  font-size: 16px;
+  font-style: italic;
+  stroke: blue;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 18px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 89, 40, 0.08) 0px 8px 8px 0;
+  cursor: pointer;
+}
+#search-button:hover {
+  background-color: #fff;
+  color: #0a4122;
+  border: 1px solid #7dbc11;
+}
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-style: italic;
+  position: relative;
+  bottom: -20px;
+}
+
+#description{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-style: italic;
+  position: relative;
+  font-size: large;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: darkblue;
+}
+
+
+  
+ 
+
+ 
+  
