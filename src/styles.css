@@ -83,7 +83,7 @@ footer {
   font-family: "Times New Roman", Times, serif;
   line-height: 18px;
   padding: 8px 18px;
-  border-radius: 30px;
+  border-radius: 20px;
   transition: all 200ms ease;
   box-shadow: rgba(37, 89, 40, 0.08) 0px 8px 8px 0;
   cursor: pointer;
@@ -93,6 +93,53 @@ footer {
   color: #0a4122;
   border: 1px solid #7dbc11;
 }
+
+#F-button{
+border:none;
+border-radius: 60px;
+background:transparent 10px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 20px;
+text-shadow: darksalmon 50px;
+display: block;
+margin: auto;
+position: right;
+}
+
+#C-button{
+border:none;
+border-radius: 60px;
+background:transparent 10px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 20px;
+text-shadow: darksalmon 50px;
+display: block;
+margin: auto;
+position: right;
+}
+
+
+#F-button:hover {
+  background:none;
+  color:firebrick;
+  border: none;
+  cursor:help;
+  
+}
+
+#C-button:hover {
+  background:none;
+  color:firebrick;
+  border: none;
+  cursor:help;
+  
+}
+
+.changeUnit{
+  display: flex;
+  justify-self: center;
+}
+
 h3 {
   font-family: "Times New Roman", Times, serif;
   font-weight: lighter;
