@@ -83,24 +83,32 @@ function search(event) {
 
 }
 
+let isCelsius = true;
+
 function convert() {
-    let tempElement = document.getElementById("temp");
-    let celsius = parseFloat(tempElement.innerHTML);
+  let tempElement = document.getElementById("temp");
+  let currentTemp = tempElement.innerHTML;
 
-    if (isNaN(celsius)) {
-        console.error("Invalid temperature value");
-        return;
-    }
+  let temperatureValue = parseFloat(currentTemp);
 
-    let fahrenheit = (celsius * 9) / 5 + 32;
-    tempElement.innerHTML = `${Math.round(fahrenheit.toFixed(2))}°F`;
+  if (isCelsius) {
+    
+    let fahrenheit = (temperatureValue * 9) / 5 + 32;
+    tempElement.innerHTML = `${Math.round(fahrenheit)}°F`;
+  } else {
+    
+    let celsius = (temperatureValue - 32) * 5 / 9;
+    tempElement.innerHTML = `${Math.round(celsius)}°C`;
+  }
 
+  isCelsius = !isCelsius; 
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    let button = document.getElementById("F-button");
-    button.addEventListener("click", convert);
+document.addEventListener("DOMContentLoaded", () => {
+  let button = document.getElementById("F-button");
+  button.addEventListener("click", convert);
 });
+
 
 
 
